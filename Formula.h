@@ -15,8 +15,6 @@ namespace formula {
 
 		void setOperands(const std::vector<Opearand>& operand);
 
-
-
 		virtual Value compute() const = 0;
 
 		virtual ~formulaImpl() {}

@@ -9,8 +9,6 @@ int main(int argc, char* argv[]) {
 		CSVReader reader(path);
 		std::shared_ptr<Sheet> sheet;
 		sheet = reader.convSheet();
-		sheet->PrintText(std::cout);
-		std::cout << "          " << std::endl;
 		sheet->PrintValue(std::cout);
 	}
 	catch (ErrorFormatTable& ex) {
